@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.loading {
+    border: 6px solid #ccc;
+    border-radius: 50%;
+    border-left-color: #1ecd97;
+    border-top-color: #1ecd97;
+    height: 60px;
+    width: 60px;
+    animation: spin 1s infinite ease-in-out;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(1080deg);
+    }
+}
